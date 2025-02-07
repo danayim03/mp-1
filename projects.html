@@ -1,0 +1,81 @@
+<!--projects page-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects | Resume</title>
+        <link rel="stylesheet" type="text/css" href="web.css">
+    </head>
+    <body>
+        <header>
+            <h1>Dana Yim</h1>
+            <p>My Online Resume</p>
+        </header>
+        
+        <div class="nav-main">
+            <nav>
+                <ul id="navbar" class="navbar-style">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <!--unique content based on the sections of resume-->
+                <!--content must occupy at least half of the screen-->
+                <h3>Projects</h3>
+                <table border="">
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Anonymous Chat Platform, Perspective</td>
+                        <td>Designed and developed the frontend and backend using React, Next.js, and Tailwind CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>DormSoup</td>
+                        <td>ChatGPT generated MIT event platform. Working on adding a comment feature using TypeScript, React, and Tailwind CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>BU CourseRoad</td>
+                        <td>Developed BU CourseRoad, an interactive tool designed to help students plan and visualize their entire academic path, semester by semester. Made with Django.</td>
+                    </tr>
+                    <tr>
+                        <td>Statistical Analysis Pages</td>
+                        <td>Implemented three statistical analysis pages and user data pages for a live production environment using Spring Boot, MVC architecture, and Tomcat server, enhancing data accessibility for users.</td>
+                    </tr>
+
+                </table>
+
+                <div class="calculator">
+                    <!--leave space for javascript calculator at the bottom of this page.-->
+                    <label for="input">First Number: </label><input type="text" id="first-number">
+                    <label for="input">Second Number: </label><input type="text" id="second-number">
+                    
+                    <div class="calc-buttons">
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="division()">/</button>
+                        <button onclick="exponentiation()">**</button>
+                        <button onclick="clearFields()">Clear</button>
+                        <h3 id="output"></h3>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        
+        <footer>
+            <p>All Rights Reserved by Dana Yim <a href="">Credits</a> &#169;</p>
+        </footer>
+
+        <script src="calculator.js"></script>
+    </body>
+</html>
+

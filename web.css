@@ -1,0 +1,165 @@
+/*
+All internal webpages, including Home page,
+1. must be responsive, wrapped,
+2. squeezed with margins on both sides,
+3. and centered
+*/
+
+
+body {
+    margin: auto;
+    font-family: "Optima", sans-serif;
+    background-color: rgb(240, 235, 225);
+}
+
+.nav-main {
+    display: flex;
+    width: 100%;
+}
+
+nav {
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(209, 209, 209);
+    padding: 10px;
+    font-size: calc(12px + 0.4vw);
+}
+
+.navbar-style {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-style li {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+a {
+    color: black;
+    font-size: calc(12px + 0.4vw);
+    text-decoration: none;
+}
+
+main {
+    width: 70%;
+    height: 100vh;
+    padding: 5%;
+    background-color: rgb(250, 245, 235);
+    font-size: calc(12px + 0.4vw);
+}
+
+header {
+    text-align: left;
+    background-color: green;
+    padding: 10px;
+    color: black;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 40%;
+}
+
+.calculator {
+    padding: 10%;
+    color: white;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px;
+}
+
+button {
+    max-width: 50px;
+    margin-top: 20px;
+}
+
+.calc-buttons {
+    margin: auto;
+}
+
+table {
+    margin-bottom: 10%;
+}
+
+ul li {
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 750px) {
+
+    .nav-main {
+        display: block;
+        width: 100%
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 2px 0px;
+    }
+
+    .navbar-style {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-style li {
+        display: inline;
+        margin: 0 auto;
+        padding: 5px 10px;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+    }
+
+    main p {
+        padding: 10%;
+    }
+
+    main h3 {
+        padding: 5%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    img, h3 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 5px;
+    }
+
+    main table {
+        margin: 0 10% 10%;
+    }
+
+    ul li {
+        margin-bottom: 5%;
+    }
+
+}
+
+
+
